@@ -19,6 +19,7 @@ public class n1000 {
 		
 		System.out.println(a+b);
 	
+	
 	}
 
 }
