@@ -1,31 +1,34 @@
-package ch04;
+package ch03;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
 
-public class n10951 {
+public class n10952 {
 
 	public static void main(String[] args) throws IOException {
-		
+
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		
+		StringTokenizer st; 
 		StringBuilder sb = new StringBuilder();
-		String str;
-		StringTokenizer st;
 		
-		while((str = br.readLine()) != null) {
+		while(true) {
 			
-			st = new StringTokenizer(str, " ");
+			st = new StringTokenizer(br.readLine(), " ");
 			
 			int a = Integer.parseInt(st.nextToken());
 			int b = Integer.parseInt(st.nextToken());
+			
+			if(a == 0 && b == 0) {
+				break;	
+			}
+			
 			sb.append(a+b).append("\n");
 		}
-		
-		System.out.print(sb);
-		
+		System.out.println(sb);
+
 	}
 
 }
