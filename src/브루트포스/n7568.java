@@ -1,5 +1,4 @@
 package 브루트포스;
-
 import java.util.*;
 import java.io.*;
 
@@ -7,8 +6,7 @@ public class n7568 {
 
 	public static void main(String[] args) throws IOException {
 		
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));		
 		StringBuilder sb = new StringBuilder();
 		
 		int N = Integer.parseInt(br.readLine());
@@ -34,9 +32,7 @@ public class n7568 {
 			}
 			sb.append(rank).append(' ');
 		}
-		
 		System.out.println(sb);
 	}
-
 }
 

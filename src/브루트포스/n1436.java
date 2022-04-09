@@ -23,3 +23,5 @@ public class n1436 {
 		System.out.println(num);
 	}
 }
+
+

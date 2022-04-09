@@ -42,8 +42,7 @@ public class n1018 {
 		}
 		System.out.println(min);
 	}
-	
-	
+		
 	public static void find(int x, int y) {
 		int end_x = x + 8;
 		int end_y = y + 8;
@@ -54,19 +53,16 @@ public class n1018 {
 		for(int i = x; i < end_x; i++) {
 			for(int j = y; j < end_y; j++) {
 				
-				//올바른 색이 아닐경우 count 1중가
-				if(arr[i][j] != TF) {
+				if(arr[i][j] != TF) {	//올바른 색이 아닐경우 count 1중가
 					count++;
 				}
-				// 한 칸 마다 색이 바뀌니까
-				// true면 false로, false면 true로
+				// 한 칸 마다 색이 바뀌니까 true면 false로, false면 true로
 				TF = !TF;
 			}
 			TF = !TF;
 		}
-		/* 첫 번째 칸부터 색칠 할 최소의 개수는 count 라고 하면(8 * 8 = 64)
-		 * 색칠 할 개수( 64 - count) 중 최솟값
-		 */
+		// 첫 번째 칸부터 색칠 할 최소의 개수는 count 라고 하면(8 * 8 = 64)
+		// 색칠 할 개수( 64 - count) 중 최솟값 
 		count = Math.min(count, 64 - count);
 		min = Math.min(min, count);
 	}
