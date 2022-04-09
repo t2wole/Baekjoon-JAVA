@@ -11,7 +11,7 @@ public class n15650 {
 		N = sc.nextInt();
 		M = sc.nextInt();
 		selected = new int[M + 1];
-	}
+	} 
 	
 	static int N, M;
 	static int[] selected;
