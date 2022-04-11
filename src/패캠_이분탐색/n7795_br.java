@@ -7,10 +7,8 @@ public class n7795_br {
 
 	public static void main(String[] args) throws IOException {
 		
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
-		StringBuilder sb = new StringBuilder();
-		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));		
+		StringBuilder sb = new StringBuilder();	
 		StringTokenizer st;
 		
 		int T = Integer.parseInt(br.readLine());
